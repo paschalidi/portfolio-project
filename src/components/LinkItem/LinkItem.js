@@ -18,10 +18,10 @@ class LinkItem extends React.Component {
   };
 
   render() {
-    const { className, href, active, disabled, children, onClick } = this.props;
+    const { className, href, active, disabled, children, onClick, styles } = this.props;
     return (
       <li role="presentation" className={cx(className, { active, disabled })}>
-        <Link to={href} onClick={onClick}>
+        <Link to={href} onClick={onClick} className={styles}>
           {children}
         </Link>
       </li>

@@ -13,6 +13,7 @@ import s from './Navigation.css';
 
 import logoUrl from './logo-small.png';
 
+import Link from '../Link';
 import LinkItem from '../LinkItem';
 import { Navbar, Nav } from 'react-bootstrap'
 
@@ -23,13 +24,12 @@ class Navigation extends React.Component {
 
   render() {
     return (
-      <Navbar fluid fixedTop>
+      <Navbar fixedTop>
+
         <Navbar.Header>
           <Navbar.Brand>
-            <LinkItem className={s.brand} href={"/"}>
-              <img src={logoUrl} width="38" height="38" alt="React"/>
-              <span className={s.brandTxt}>Your Company</span>
-            </LinkItem>
+            {/*<Link to="/"><img src={logoUrl} width="38" height="38" alt="React"/> </Link>*/}
+            <Link to="/">Portoflio</Link>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
@@ -43,14 +43,6 @@ class Navigation extends React.Component {
         </Navbar.Collapse>
       </Navbar>
     );
-    // return (
-    //   <div className={cx(s.root, this.props.className)} role="navigation">
-    //     <Link className={s.link} to="/about">About</Link>
-    //     <Link className={s.link} to="/login">Log in</Link>
-    //     <span className={s.spacer}>or</span>
-    //     <Link className={cx(s.link, s.highlight)} to="/register">Sign up</Link>
-    //   </div>
-    // );
   }
 }
 

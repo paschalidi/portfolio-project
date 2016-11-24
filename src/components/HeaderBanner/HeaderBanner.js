@@ -10,7 +10,6 @@
 import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './HeaderBanner.css';
-import ps from 'public/public.css';
 
 class HeaderBanner extends React.Component {
   render() {
@@ -25,4 +24,4 @@ class HeaderBanner extends React.Component {
   }
 }
 
-export default withStyles(s, ps)(HeaderBanner);
+export default withStyles(s)(HeaderBanner);

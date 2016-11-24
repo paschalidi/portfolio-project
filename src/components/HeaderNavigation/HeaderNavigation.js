@@ -9,7 +9,7 @@
 
 import React, { PropTypes } from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
-import s from './Navigation.css';
+import s from './HeaderNavigation.css';
 
 import logoUrl from './logo-small.png';
 
@@ -17,7 +17,7 @@ import Link from '../Link';
 import LinkItem from '../LinkItem';
 import { Navbar, Nav } from 'react-bootstrap'
 
-class Navigation extends React.Component {
+class HeaderNavigation extends React.Component {
   static propTypes = {
     className: PropTypes.string,
   };
@@ -46,4 +46,4 @@ class Navigation extends React.Component {
   }
 }
 
-export default withStyles(s)(Navigation);
+export default withStyles(s)(HeaderNavigation);

@@ -28,7 +28,7 @@
   /* The image used */
   background-image: url("http://demo.nrgthemes.com/projects/lychee/wp-content/uploads/2015/07/shop_image.jpg");
   /* Set a specific height */
-  min-height: 500px;
+  height: 80vh;
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;

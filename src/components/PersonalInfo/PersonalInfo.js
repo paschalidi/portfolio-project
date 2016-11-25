@@ -31,7 +31,8 @@ class PersonalInfo extends React.Component {
             </div>
           </div>
         </AutoAffix>
-        <div style={{height: "4000px"}}/>
+        {/*TODO find a more proper way to implement that. */}
+        <div style={{height: "100vh"}}/>
       </div>
     );
   }

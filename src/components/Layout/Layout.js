@@ -10,10 +10,13 @@
 import React, { PropTypes } from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Layout.css';
+
 import Header from '../Header';
 import Feedback from '../Feedback';
 import Footer from '../Footer';
-import { Row, Col } from 'react-bootstrap'
+import PersonalInfo from '../PersonalInfo';
+
+import { Row, Col, Grid } from 'react-bootstrap'
 
 class Layout extends React.Component {
   static propTypes = {
@@ -24,11 +27,16 @@ class Layout extends React.Component {
     return (
       <div>
         <Header />
-        <Row>
-          <Col xs={6} xsOffset={3}>
-            {this.props.children}
-          </Col>
-        </Row>
+        <Grid>
+          <Row>
+            <Col xs={12} md={3}>
+              <PersonalInfo />
+            </Col>
+            <Col xs={12} md={6}>
+              {this.props.children}
+            </Col>
+          </Row>
+        </Grid>
         <Feedback />
         <Footer />
       </div>

@@ -8,7 +8,6 @@
  */
 
 import React from 'react';
-import Navigation from '../Navigation';
 import HeaderBanner from '../HeaderBanner';
 import HeaderNavigation from '../HeaderNavigation';
 

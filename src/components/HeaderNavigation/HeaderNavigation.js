@@ -26,7 +26,6 @@ class HeaderNavigation extends React.Component {
 
         <Navbar.Header>
           <Navbar.Brand>
-            {/*<Link to="/"><img src={logoUrl} width="38" height="38" alt="React"/> </Link>*/}
             <Link to="/">Portoflio</Link>
           </Navbar.Brand>
           <Navbar.Toggle />

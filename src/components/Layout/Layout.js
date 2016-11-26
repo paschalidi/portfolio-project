@@ -15,6 +15,8 @@ import Header from '../Header';
 import Feedback from '../Feedback';
 import Footer from '../Footer';
 import PersonalInfo from '../PersonalInfo';
+import Parallax from '../Parallax';
+import MouseAnimated from '../MouseAnimated';
 
 import { Row, Col, Grid } from 'react-bootstrap'
 
@@ -24,19 +26,26 @@ class Layout extends React.Component {
   };
 
   render() {
+    const backgroundImage = require('../../public/assets/welcome_page_background.jpg')
     return (
       <div>
         <Header />
+        <Parallax h2={'ON A MISSION TO DISCOVER MY NEXT GREAT ADVENTURE'}
+                  h3={'starting with this project to figure it out'}
+                  backgroundImage={backgroundImage}
+        >
+          <MouseAnimated />
+        </Parallax>
         <Grid>
           <Row>
-            <Col smHidden xsHidden xs={12} md={3}>
-              <PersonalInfo />
-            </Col>
-            <Col xs={12} md={6}>
-              {this.props.children}
-            </Col>
+            <Col smHidden xsHidden xs={12} md={3}> <PersonalInfo /> </Col>
+            <Col xs={12} md={6}> {this.props.children} </Col>
           </Row>
         </Grid>
+        <Parallax backgroundImage={backgroundImage} >
+
+        </Parallax>
+        <h1>HELLO THIS IS ME</h1>
         <Feedback />
         <Footer />
       </div>

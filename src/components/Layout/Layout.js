@@ -29,7 +29,7 @@ class Layout extends React.Component {
         <Header />
         <Grid>
           <Row>
-            <Col xs={12} md={3}>
+            <Col smHidden xsHidden xs={12} md={3}>
               <PersonalInfo />
             </Col>
             <Col xs={12} md={6}>

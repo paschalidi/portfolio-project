@@ -17,7 +17,7 @@ class HeaderBanner extends React.Component {
       <div>
         <div className={s.parallax}></div>
         <div className={s.caption}>
-          <span className={s.border}>SCROLL DOWN</span>
+          <span className={s.border}>THE BLOG</span>
         </div>
       </div>
     );

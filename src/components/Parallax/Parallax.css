@@ -1,0 +1,72 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+/*NAVIGATE CLASS FOR -HOME ABOUT ETC-*/
+.navigator {
+  background-color: #111;
+  color: #fff;
+  padding: 10px;
+  font-size: 15px;
+  letter-spacing: 10px;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+  outline-offset: 8px;
+}
+
+.mainTitle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 80px;
+  text-align: center;
+  outline: 1px solid #fff;
+  outline-offset: 8px;
+}
+
+.clip {
+  clip: rect(auto, auto, auto, auto);
+  height: 100%;
+  position: absolute; /* position: relative;  */
+  width: 100%;
+}
+
+.bgBgChrome {
+  background-image: url('http://demo.nrgthemes.com/projects/lychee/wp-content/uploads/2015/07/shop_image.jpg');
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -ms-background-size: cover;
+  background-size: cover;
+  position: fixed;
+  z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+  .banner {
+    height: -webkit-calc(100vh - 46px);
+    height: -moz-calc(100vh - 46px);
+    height: calc(100vh - 46px);
+  }
+}

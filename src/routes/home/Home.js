@@ -23,7 +23,7 @@ class Home extends React.Component {
   render() {
     return (
       <div className={s.container}>
-        <h3>React.js News</h3>
+        <h3>Latest</h3>
         <hr />
         <ul className={s.news}>
           {this.props.news.map((item, index) => (

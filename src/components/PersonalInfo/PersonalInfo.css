@@ -1,1 +1,13 @@
+.customPanel {
+  border: none;
+}
 
+.down {
+  border: none;
+  margin-top: 45px;
+}
+
+.newsItem {
+  list-style-type: none;
+  padding-bottom: 6px;
+}

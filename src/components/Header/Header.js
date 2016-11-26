@@ -16,7 +16,6 @@ class Header extends React.Component {
     return (
       <div>
         <HeaderNavigation />
-        <HeaderBanner />
       </div>
     );
   }

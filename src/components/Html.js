@@ -29,7 +29,9 @@ class Html extends React.Component {
           <title>{title}</title>
           {/*BOOTSTRAP AND THEME*/}
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/readable/bootstrap.min.css" />
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/journal/bootstrap.min.css" />
+          {/*FONTAWESOME*/}
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
           <meta name="description" content={description} />
           <meta name="viewport" content="width=device-width, initial-scale=1" />

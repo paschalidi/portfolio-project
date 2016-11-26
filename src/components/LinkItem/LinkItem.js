@@ -1,7 +1,6 @@
 import React, { PropTypes } from 'react';
 import cx from 'classnames';
 import Link from '../Link';
-import { Navbar, Nav } from 'react-bootstrap'
 
 class LinkItem extends React.Component {
   static propTypes = {

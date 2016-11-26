@@ -43,9 +43,8 @@ class Layout extends React.Component {
           </Row>
         </Grid>
         <Parallax backgroundImage={backgroundImage} >
-
+          {/*TODO PUT HERE THE ASK QUESTON | GIVE FEEDBACK*/}
         </Parallax>
-        <h1>HELLO THIS IS ME</h1>
         <Feedback />
         <Footer />
       </div>

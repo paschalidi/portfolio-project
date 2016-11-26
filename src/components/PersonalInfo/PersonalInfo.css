@@ -1,5 +1,6 @@
-.customPanel {
+.noBorder {
   border: none;
+  background: transparent;
 }
 
 .down {
@@ -10,4 +11,13 @@
 .newsItem {
   list-style-type: none;
   padding-bottom: 6px;
+}
+
+.profilePicture {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-image: url('https://qph.ec.quoracdn.net/main-thumb-97470996-200-zeihwcbprjwjfdjpttuiaollwtuajzhy.jpeg');
+  background-size: cover;
+  padding: 5px;
 }

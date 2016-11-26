@@ -10,7 +10,7 @@
 import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './PersonalInfo.css';
-import {AutoAffix , Affix} from 'react-overlays'
+import {AutoAffix} from 'react-overlays'
 import {Image, Panel} from 'react-bootstrap'
 
 class PersonalInfo extends React.Component {
@@ -19,11 +19,9 @@ class PersonalInfo extends React.Component {
 
     return (
       <div className={s.down}>
-        <Affix viewportOffsetTop={80} container={this}>
-          <Panel className={s.customPanel}>
-            <div>
-              <Image src={profileImage} responsive circle/>
-            </div>
+        <AutoAffix viewportOffsetTop={80} container={this}>
+          <Panel className={s.noBorder}>
+            <div className={s.profilePicture}></div>
             <div>
               <h4>
                 Christos Paschalidis
@@ -38,16 +36,16 @@ class PersonalInfo extends React.Component {
             <div>
               <ul>
                 <li>
-                  <h6 className={s.newsTitle}><i className="fa fa-map-marker"/>  Berlin, DE | Patras, GR</h6>
+                  <h6 className={s.newsTitle}><i className="fa fa-map-marker"/> Berlin, DE | Patras, GR</h6>
                 </li>
                 <li>
                   <a target="blank" href="https://www.facebook.com/paschalidi">
-                    <h6 className={s.newsTitle}><i className="fa fa-facebook"/>  Facebook</h6>
+                    <h6 className={s.newsTitle}><i className="fa fa-facebook"/> Facebook</h6>
                   </a>
                 </li>
                 <li>
                   <a target="blank" href="https://gr.linkedin.com/in/christos-paschalidis">
-                    <h6 className={s.newsTitle}><i className="fa fa-linkedin"/>  LinkedIn</h6>
+                    <h6 className={s.newsTitle}><i className="fa fa-linkedin"/> LinkedIn</h6>
                   </a>
                 </li>
                 <li>
@@ -57,19 +55,20 @@ class PersonalInfo extends React.Component {
                 </li>
                 <li>
                   <a target="blank" href="https://github.com/paschalidi">
-                    <h6 className={s.newsTitle}><i className="fa fa-github"/>  Github</h6>
+                    <h6 className={s.newsTitle}><i className="fa fa-github"/> Github</h6>
                   </a>
                 </li>
                 <li>
                   <a target="blank" href="http://stackoverflow.com/users/6013423/paschalidis-christos">
-                    <h6 className={s.newsTitle}><i className="fa fa-stack-overflow"/>  Stackoverflow</h6>
+                    <h6 className={s.newsTitle}><i className="fa fa-stack-overflow"/> Stackoverflow</h6>
                   </a>
                 </li>
               </ul>
             </div>
 
           </Panel>
-        </Affix>
+        </AutoAffix>
+        <div style={{height: "100vh"}}/>
       </div>
     );
   }

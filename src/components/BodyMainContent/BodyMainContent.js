@@ -9,13 +9,12 @@
 
 import React, { PropTypes } from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
-import s from './Layout.css';
+import { Row, Col, Grid } from 'react-bootstrap';
 
-import Header from '../Header';
-import Body from '../Body';
-import Footer from '../Footer';
+import s from './BodyMainContent.css';
+import PersonalInfo from '../PersonalInfo';
 
-class Layout extends React.Component {
+class BodyMainContent extends React.Component {
   static propTypes = {
     children: PropTypes.node.isRequired,
   };
@@ -23,13 +22,14 @@ class Layout extends React.Component {
   render() {
     const { children } = this.props;
     return (
-      <div>
-        <Header />
-        <Body>{children}</Body>
-        <Footer />
-      </div>
+      <Grid>
+        <Row>
+          <Col smHidden xsHidden xs={12} md={3}> <PersonalInfo /> </Col>
+          <Col xs={12} md={6}> {children} </Col>
+        </Row>
+      </Grid>
     );
   }
 }
 
-export default withStyles(s)(Layout);
+export default withStyles(s)(BodyMainContent);

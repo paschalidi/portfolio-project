@@ -9,11 +9,10 @@
 
 import React, { PropTypes } from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
+import { Navbar, Nav } from 'react-bootstrap';
 import s from './HeaderNavigation.css';
-
 import Link from '../Link';
 import LinkItem from '../LinkItem';
-import { Navbar, Nav } from 'react-bootstrap'
 
 class HeaderNavigation extends React.Component {
   static propTypes = {
@@ -33,9 +32,9 @@ class HeaderNavigation extends React.Component {
 
         <Navbar.Collapse>
           <Nav pullRight>
-            <LinkItem href={"/about"}     children={'About'} />
-            <LinkItem href={"/login"}     children={'Log in'} />
-            <LinkItem href={"/register"}  children={'Sign Up'} styles={s.highlight}/>
+            <LinkItem href={'/about'}> About </LinkItem>
+            <LinkItem href={'/login'}> Log in </LinkItem>
+            <LinkItem href={'/register'} styles={s.highlight}> Sign Up </LinkItem>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

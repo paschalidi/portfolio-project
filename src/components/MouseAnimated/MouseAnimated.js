@@ -1,4 +1,4 @@
-import React, {PropTypes} from 'react';
+import React, { PropTypes } from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './MouseAnimated.css';
 
@@ -14,4 +14,4 @@ class MouseAnimated extends React.Component {
   }
 }
 
-export default withStyles(s)(MouseAnimated)
+export default withStyles(s)(MouseAnimated);

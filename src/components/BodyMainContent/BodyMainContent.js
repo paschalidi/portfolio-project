@@ -13,6 +13,7 @@ import { Row, Col, Grid } from 'react-bootstrap';
 
 import s from './BodyMainContent.css';
 import PersonalInfo from '../PersonalInfo';
+import SocialMedia from '../SocialMedia';
 
 class BodyMainContent extends React.Component {
   static propTypes = {
@@ -25,6 +26,7 @@ class BodyMainContent extends React.Component {
       <Grid>
         <Row>
           <Col smHidden xsHidden xs={12} md={3}> <PersonalInfo /> </Col>
+          <Col xsHidden mdHidden lgHidden sm={12}> <br /><SocialMedia /> </Col>
           <Col xs={12} md={6}> {children} </Col>
         </Row>
       </Grid>

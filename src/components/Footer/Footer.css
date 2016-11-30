@@ -10,15 +10,19 @@
 @import '../variables.css';
 
 .root {
-  background: #333;
+  background: #111;
   color: #fff;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .container {
-  margin: 0 auto;
-  padding: 20px 15px;
-  max-width: var(--max-content-width);
-  text-align: center;
+  padding: 30px;
+  /*font-size: 25px;*/
+}
+
+.letterSpacing {
+  letter-spacing: 5px;
 }
 
 .text {

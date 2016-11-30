@@ -9,24 +9,41 @@
 
 import React from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
+import { Row, Col, Grid } from 'react-bootstrap';
+
 import s from './Footer.css';
 import Link from '../Link';
+import SocialMedia from '../SocialMedia';
 
 class Footer extends React.Component {
   render() {
     return (
       <div className={s.root}>
-        <div className={s.container}>
-          <span className={s.text}>© Your Company</span>
-          <span className={s.spacer}>·</span>
-          <Link className={s.link} to="/">Home</Link>
-          <span className={s.spacer}>·</span>
-          <Link className={s.link} to="/admin">Admin</Link>
-          <span className={s.spacer}>·</span>
-          <Link className={s.link} to="/privacy">Privacy</Link>
-          <span className={s.spacer}>·</span>
-          <Link className={s.link} to="/not-found">Not Found</Link>
-        </div>
+        <Grid>
+          <Row className={s.container}>
+            <SocialMedia />
+          </Row>
+
+          <Row className={s.container}>
+            <Col xs={12} sm={3}><Link to="/">HOME</Link></Col>
+            <Col xs={12} sm={3}><Link to="/about">ABOUT</Link></Col>
+            <Col xs={12} sm={3}><Link to="/contact">CONTACT</Link></Col>
+            <Col xs={12} sm={3}><Link to="/privacy">PRIVACY POLICY</Link></Col>
+          </Row>
+
+          <Row className={s.container} style={{ letterSpacing: '2px' }}>
+            <span>for more information, </span>
+            <span>
+              <a href="mailto:paschalidi@ceid.upatras.gr" target="_blank" rel="noopener noreferrer">
+                contact me
+              </a>
+            </span>
+          </Row>
+
+          <Row className={s.container} style={{ letterSpacing: '2px' }}>
+            <h6>© 2016 Christos Paschaidis. All rights reserved. </h6>
+          </Row>
+        </Grid>
       </div>
     );
   }

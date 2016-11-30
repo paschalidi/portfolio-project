@@ -14,6 +14,7 @@ import s from './Body.css';
 import Feedback from '../Feedback';
 import Parallax from '../Parallax';
 import MouseAnimated from '../MouseAnimated';
+import ContactMe from '../ContactMe';
 import BodyMainContent from '../BodyMainContent';
 
 class Body extends React.Component {
@@ -29,14 +30,21 @@ class Body extends React.Component {
         <Parallax
           h2={'ON A MISSION TO DISCOVER MY NEXT GREAT ADVENTURE'}
           h3={'starting with this project to figure it out'}
+          height={85}
+          backgroundImagePath={backgroundImagePath}
         >
           <MouseAnimated />
         </Parallax>
 
         <BodyMainContent>{children}</BodyMainContent>
 
-        <Parallax>
-          <Feedback />
+        <Parallax
+          h2={'I CAN HELP'}
+          h3={'i am currently available for freelance work'}
+          p={'The fact that you made it this far fills me with joy that you liked what you saw, and if you are interested in working with me on a project or have an idea you would just like to discuss please don`t hesitate to drop me a message or call me..'}
+          height={80}
+          backgroundImagePath={backgroundImagePath}
+        >
         </Parallax>
       </div>
     );

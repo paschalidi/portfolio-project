@@ -25,7 +25,7 @@ class PersonalInfo extends React.Component {
                 Christos Paschalidis
               </h4>
               <div>
-                I don ' t love studying. <br /> I hate studying. <br /> I like learning. <br />
+                I don`t love studying. <br /> I hate studying. <br /> I like learning. <br />
                 Learning is beautiful.
                 <br />
               </div>

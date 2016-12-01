@@ -8,7 +8,6 @@
  */
 
 import React from 'react';
-import HeaderBanner from '../HeaderBanner';
 import HeaderNavigation from '../HeaderNavigation';
 
 class Header extends React.Component {

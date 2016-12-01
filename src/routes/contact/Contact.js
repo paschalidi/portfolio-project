@@ -8,8 +8,18 @@
  */
 
 import React, { PropTypes } from 'react';
+import { FormGroup, ControlLabel, FormControl } from 'react-bootstrap';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Contact.css';
+
+function FieldGroup({ id, label, ...props }) {
+  return (
+    <FormGroup controlId={id}>
+      <ControlLabel>{label}</ControlLabel>
+      <FormControl {...props} />
+    </FormGroup>
+  );
+}
 
 class Contact extends React.Component {
   static propTypes = {
@@ -21,7 +31,24 @@ class Contact extends React.Component {
       <div className={s.root}>
         <div className={s.container}>
           <h1>{this.props.title}</h1>
-          <p>...</p>
+
+          <FieldGroup
+            id="formControlsText"
+            type="text"
+            label="Text"
+            placeholder="Enter text"
+          />
+          <FieldGroup
+            id="formControlsEmail"
+            type="email"
+            label="Email address"
+            placeholder="Enter email"
+          />
+          <FormGroup controlId="formControlsTextarea">
+            <ControlLabel>Textarea</ControlLabel>
+            <FormControl componentClass="textarea" placeholder="textarea" />
+          </FormGroup>
+
         </div>
       </div>
     );

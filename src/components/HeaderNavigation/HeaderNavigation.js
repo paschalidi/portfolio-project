@@ -25,7 +25,7 @@ class HeaderNavigation extends React.Component {
 
         <Navbar.Header>
           <Navbar.Brand>
-            <Link to="/">Portoflio</Link>
+            <Link to="/">Betta World</Link>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
@@ -33,9 +33,6 @@ class HeaderNavigation extends React.Component {
         <Navbar.Collapse>
           <Nav pullRight>
             <LinkItem href={'/about'}> About </LinkItem>
-            <LinkItem href={'/contact'}> Contact </LinkItem>
-            <LinkItem href={'/login'}> Log in </LinkItem>
-            <LinkItem href={'/register'} styles={s.highlight}> Sign Up </LinkItem>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

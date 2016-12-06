@@ -20,24 +20,15 @@ class Footer extends React.Component {
     return (
       <div className={s.root}>
         <Grid>
-          <Row className={s.container}>
-            <SocialMedia />
-          </Row>
 
           <Row className={s.container}>
             <Col xs={12} sm={3}><Link to="/">HOME</Link></Col>
             <Col xs={12} sm={3}><Link to="/about">ABOUT</Link></Col>
-            <Col xs={12} sm={3}><Link to="/contact">CONTACT</Link></Col>
             <Col xs={12} sm={3}><Link to="/privacy">PRIVACY POLICY</Link></Col>
           </Row>
 
-          <Row className={s.container} style={{ letterSpacing: '2px' }}>
-            <span>for more information, </span>
-            <span>
-              <a href="mailto:paschalidi@ceid.upatras.gr" target="_blank" rel="noopener noreferrer">
-                contact me
-              </a>
-            </span>
+          <Row className={s.container}>
+            <SocialMedia />
           </Row>
 
           <Row className={s.container} style={{ letterSpacing: '2px' }}>

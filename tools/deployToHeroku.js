@@ -14,7 +14,7 @@ import run from './run';
 import build from './build';
 
 // The appName should be the same as your Heroku's app name
-const appName = 'betta-world';
+const appName = 'cpas';
 
 // For more information visit http://gitolite.com/deploy.html
 const remote = {

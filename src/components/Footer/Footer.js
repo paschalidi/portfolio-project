@@ -20,11 +20,9 @@ class Footer extends React.Component {
     return (
       <div className={s.root}>
         <Grid>
-
           <Row className={s.container}>
-            <Col xs={12} sm={3}><Link to="/">HOME</Link></Col>
-            <Col xs={12} sm={3}><Link to="/about">ABOUT</Link></Col>
-            <Col xs={12} sm={3}><Link to="/privacy">PRIVACY POLICY</Link></Col>
+            <Col xsOffset={2} xs={4} smOffset={4} sm={2}><h6><Link to="/">HOME</Link></h6></Col>
+            <Col xs={4} sm={2}><h6><Link to="/about">ABOUT</Link></h6></Col>
           </Row>
 
           <Row className={s.container}>
@@ -32,7 +30,10 @@ class Footer extends React.Component {
           </Row>
 
           <Row className={s.container} style={{ letterSpacing: '2px' }}>
-            <h6>© 2016 Christos Paschaidis. All rights reserved. </h6>
+            <h6>
+              © 2016 Christos Paschaidis. All rights reserved.
+              View the <Link to="/terms">Terms & Conditions</Link>.
+            </h6>
           </Row>
         </Grid>
       </div>

@@ -32,7 +32,7 @@
 .scrollBtn .mouse {
   width: 35px;
   height: 55px;
-  border: 2px solid #111;
+  border: 2px solid white;
   border-radius: 23px;
 }
 
@@ -43,7 +43,7 @@
   left: 45%;
   width: 5px;
   height: 6px;
-  background: #333;
+  background: white;
   border-radius: 50%;
   -webkit-animation: ani-mouse 2.5s linear infinite;
   -moz-animation: ani-mouse 2.5s linear infinite;

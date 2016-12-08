@@ -1,5 +1,5 @@
 ---
-title: About
+title: About Us
 component: ContentPage
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean consequat

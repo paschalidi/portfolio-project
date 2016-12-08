@@ -39,8 +39,9 @@
 .clip {
   clip: rect(auto, auto, auto, auto);
   height: 100%;
-  position: absolute; /* position: relative;  */
+  position: absolute;
   width: 100%;
+  display: block
 }
 
 .bgBgChrome {
@@ -50,8 +51,6 @@
   height: 100%;
   overflow: hidden;
   background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-attachment: scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -66,5 +65,12 @@
     height: -webkit-calc(100vh - 46px);
     height: -moz-calc(100vh - 46px);
     height: calc(100vh - 46px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mainTitle {
+    width: 90%;
+    padding: 10px;
   }
 }

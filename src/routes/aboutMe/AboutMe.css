@@ -1,0 +1,37 @@
+/**
+ * React Starter Kit (https://www.reactstarterkit.com/)
+ *
+ * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+@import '../../components/variables.css';
+
+.container {
+  font-family: "News Cycle", "Arial Narrow Bold", sans-serif;
+  margin: 0 auto;
+  padding: 0 0 40px;
+  max-width: var(--max-content-width);
+}
+
+.textSelection::selection {
+  color: #eb2534;
+  background-color: transparent;
+}
+
+.h0 {
+  font-size: 85px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.textInvisible {
+  color: transparent;
+  background-color: transparent;
+  border-bottom: dotted #D7D0BE;
+}
+.textInvisible::selection {
+  color: #eb2534;
+  background-color: transparent;
+}

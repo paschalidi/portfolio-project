@@ -117,7 +117,7 @@ class Privacy extends React.Component {
           <h4>Contact me</h4>
           <p>
             If you have any questions about this Privacy Policy, please
-            <a href="mailto:paschalidi@outlook.com" target="_blank"> contact me
+            <a href="mailto:paschalidi@outlook.com" target="_blank">contact me
             </a>.
           </p>
         </div>

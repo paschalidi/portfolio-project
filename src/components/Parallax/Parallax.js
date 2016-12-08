@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Parallax.css';
-import img from '../../public/assets/background_lamps.jpg';
+import img from '../../public/assets/road_trees_marking.jpg';
 
 class Parallax extends React.Component {
   static propTypes = {

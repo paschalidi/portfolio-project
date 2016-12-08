@@ -25,8 +25,8 @@ class BodyMainContent extends React.Component {
     return (
       <Grid>
         <Row>
-          <Col smHidden xsHidden xs={12} md={3}> <PersonalInfo /> </Col>
-          <Col xsHidden mdHidden lgHidden sm={12}> <br /><SocialMedia /> </Col>
+          <Col smHidden xsHidden md={3}> <PersonalInfo /> </Col>
+          <Col mdHidden lgHidden xs={12}> <br /><SocialMedia /> </Col>
           <Col xs={12} md={6}> {children} </Col>
         </Row>
       </Grid>

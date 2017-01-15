@@ -21,7 +21,7 @@
 }
 
 .h0 {
-  font-size: 85px;
+  font-size: 50px;
   text-align: center;
   font-weight: 700;
 }
@@ -31,7 +31,11 @@
   background-color: transparent;
   border-bottom: dotted #D7D0BE;
 }
+
 .textInvisible::selection {
   color: #eb2534;
   background-color: transparent;
+}
+.red {
+  color: #eb2534;
 }

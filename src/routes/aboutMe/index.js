@@ -11,7 +11,7 @@ import React from 'react';
 import Layout from '../../components/Layout';
 import AboutMe from './AboutMe';
 
-const title = 'Terms and Conditions';
+const title = 'About me';
 
 export default {
 

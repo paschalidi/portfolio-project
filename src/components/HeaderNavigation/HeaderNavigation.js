@@ -32,7 +32,7 @@ class HeaderNavigation extends React.Component {
 
         <Navbar.Collapse>
           <Nav pullRight>
-            <LinkItem href={'/about'}> About </LinkItem>
+            <LinkItem href={'/aboutme'}> About </LinkItem>
             <NavItem href="https://github.com/paschalidi"><i className="fa fa-fw fa-github" style={{ color: '#171516' }} /></NavItem>
           </Nav>
         </Navbar.Collapse>

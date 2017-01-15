@@ -22,7 +22,7 @@ class Footer extends React.Component {
         <Grid>
           <Row className={s.container}>
             <Col xsOffset={2} xs={4} smOffset={4} sm={2}><h6><Link to="/">HOME</Link></h6></Col>
-            <Col xs={4} sm={2}><h6><Link to="/about">ABOUT</Link></h6></Col>
+            <Col xs={4} sm={2}><h6><Link to="/aboutme">ABOUT</Link></h6></Col>
           </Row>
 
           <Row className={s.container}>

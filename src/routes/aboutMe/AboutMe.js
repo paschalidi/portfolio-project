@@ -79,10 +79,11 @@ class AboutMe extends React.Component {
           <br />
 
           <p className={s.textSelection}>
-            I believe that people who you are surrounded with shape, in a way, the person you are and will be.
+            I believe that people who you are surrounded are shaping, in a way, the person you are and will be.
+            I also believe that it should be our goal to become the best version of ourselves.
             Please let me explain myself,
             surround a person with people who are curious and you make a curious person,
-            surround a person with people who are ambitious and the pursue for their dreams, and you
+            surround a person with people who are ambitious and pursue their dreams, and you
             have a person who will chase his dreams.
             <br />
             I personally want to be surrounded by people who live their dream every.single.day.
@@ -120,7 +121,7 @@ class AboutMe extends React.Component {
             How do I see myself in the future.
           </div>
           <h3 className={s.textSelection}>
-            Be surrounded by people who have dreams and goals that can actually make a change to this world.
+            Be surrounded by people who have dreams and goals that can actually make a change into this world.
           </h3>
           <br />
         </div>

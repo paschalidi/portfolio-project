@@ -31,7 +31,7 @@
     "query-string": "4.2.3",
     "react": "15.4.0",
     "react-dom": "15.4.0",
-    "sequelize": "3.27.0",
+    "sequelize": "5.19.4",
     "source-map-support": "0.4.6",
     "sqlite3": "3.1.8",
     "universal-router": "2.0.0",
